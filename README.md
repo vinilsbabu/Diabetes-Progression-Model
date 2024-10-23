@@ -6,11 +6,15 @@ This project aims to model the progression of diabetes using machine learning te
 ## Dataset
 The dataset used in this project is the Diabetes dataset from the `sklearn` library. It contains features that describe various health measurements of individuals along with the target variable indicating the progression of diabetes.
 
+### Key Findings
+- The dataset does not have any missing data.
+- Glucose levels had the highest effect on the outcome.
+- As expected, pregnancies were correlated to age.
+
 ## Key Components
 
 1. **Loading and Preprocessing**
     - Load the Diabetes dataset.
-    - Handle missing values (if any).
     - Normalize features for better performance of the ANN model.
 
 2. **Exploratory Data Analysis (EDA)**
@@ -27,11 +31,15 @@ The dataset used in this project is the Diabetes dataset from the `sklearn` libr
 
 5. **Evaluating the Model**
     - Evaluate the model on the testing data.
-    - Report performance metrics such as Mean Squared Error and R² Score.
+    - Performance metrics:
+        - **Mean Squared Error**: 2813.13
+        - **R² Score**: 0.47
 
 6. **Improving the Model**
-    - Experiment with different architectures, activation functions, or hyperparameters to enhance model performance.
-    - Report changes made and corresponding improvements in performance.
+    - Experiment with different architectures and hyperparameters.
+    - After experimentation:
+        - **Improved Mean Squared Error**: 3729.71
+        - **Improved R² Score**: 0.30
 
 ## Requirements
 To run this project, you will need the following Python libraries:
